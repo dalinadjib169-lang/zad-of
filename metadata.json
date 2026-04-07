@@ -1,0 +1,9 @@
+{
+  "name": "Teac DZ",
+  "description": "A social platform for Algerian teachers to connect, share, and collaborate.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}

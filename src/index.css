@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-amiri: "Amiri", serif;
+  --color-primary: #7c3aed; /* Purple 600 */
+  --color-primary-dark: #6d28d9; /* Purple 700 */
+  --color-accent: #d8b4fe; /* Purple 300 */
+  --color-dark: #0f172a; /* Slate 900 */
+  --color-darker: #020617; /* Slate 950 */
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100;
+  }
+}
+
+.dark-card {
+  @apply bg-slate-900/50 backdrop-blur-md border border-slate-800 shadow-xl;
+}
+
+.purple-gradient {
+  @apply bg-gradient-to-br from-purple-600 to-indigo-900;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full hover:bg-purple-600 transition-colors;
+}
